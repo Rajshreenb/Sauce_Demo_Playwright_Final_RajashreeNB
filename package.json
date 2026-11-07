@@ -1,0 +1,25 @@
+{
+  "name": "saucedemo-playwright-js-v2",
+  "version": "2.0.0",
+  "description": "Playwright (JavaScript): built-in locators, fixtures, API tests and storageState session reuse",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "playwright.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:ui-tests": "playwright test --project=chromium-auth --project=chromium-guest",
+    "test:api": "playwright test --project=api",
+    "test:headed": "playwright test --project=chromium-auth --project=chromium-guest --headed",
+    "test:runner": "playwright test --ui",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://www.saucedemo.com"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6"
+  }
+}
